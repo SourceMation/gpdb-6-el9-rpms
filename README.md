@@ -28,21 +28,27 @@ Installation is as simple as downloading the packages and installing them.
 ```bash
 mkdir gpdb-packages
 # Get only these packages you need or all of them
-wget -P gpdb-packages TODO
-wget -P gpdb-packages TODO
-wget -P gpdb-packages TODO
-wget -P gpdb-packages TODO
-wget -P gpdb-packages TODO
-wget -P gpdb-packages TODO
+wget -P gpdb-packages https://github.com/SourceMation/gpdb-6-el9-rpms/releases/download/6-6.27.1/diskquota-2.3.0-1.el9.x86_64.rpm
+wget -P gpdb-packages https://github.com/SourceMation/gpdb-6-el9-rpms/releases/download/6-6.27.1/gpbackup-1.0.0-1.el9.x86_64.rpm
+wget -P gpdb-packages https://github.com/SourceMation/gpdb-6-el9-rpms/releases/download/6-6.27.1/gpbackup-s3-plugin-1.0.0-1.el9.x86_64.rpm
+wget -P gpdb-packages https://github.com/SourceMation/gpdb-6-el9-rpms/releases/download/6-6.27.1/gpupgrade-1.0.0-1.el9.x86_64.rpm
+wget -P gpdb-packages https://github.com/SourceMation/gpdb-6-el9-rpms/releases/download/6-6.27.1/open-source-greenplum-db-6.27.1-rhel9-x86_64.rpm
+wget -P gpdb-packages https://github.com/SourceMation/gpdb-6-el9-rpms/releases/download/6-6.27.1/pgbouncer-gp-1.0.0-1.el9.x86_64.rpm
+wget -P gpdb-packages https://github.com/SourceMation/gpdb-6-el9-rpms/releases/download/6-6.27.1/pxf-gp6-6.10.1-SNAPSHOT.el9.x86_64.rpm
 sudo dnf install gpdb-packages/*.rpm
 ```
 
 
+## System preparation/start/administarion
+
+Consult the official documentation and remember about things like
+`/usr/local/greenplum-db/greenplum_path.sh` etc.
+
+
 ## Migration support
 
-
-If you are considering migration to another database or need assistance with
-it, we are here to support you. Contact us at sourcemation at linuxpolska.com.
-We are vendor-neutral and can assist you with both migration and obtaining
-official support for commercially enhanced Greenplum DB (depending on
-availability).
+If you are considering migration to another database, buying the commercial
+solution, or need assistance with it, we are here to support you. Contact us at
+sourcemation at linuxpolska.com. **We are vendor-neutral** and can assist you
+with both migration and obtaining official support for commercially enhanced
+Greenplum DB (depending on availability).
